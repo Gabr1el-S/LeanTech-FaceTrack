@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="0"
+    android:backgroundTint="#000000"
+    android:backgroundTintMode="add"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/untitled_design" />
+
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="197dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/oncampus" />
+
+    <ImageView
+        android:id="@+id/usericon"
+        android:layout_width="163dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/usericon" />
+
+    <TextView
+        android:id="@+id/Recordforday"
+        android:layout_width="352dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/alatsi"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3"
+        android:text="Student records for"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#3F51B5"
+        android:onClick="btnClick"
+
+
+        android:text="Refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+
+
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="62dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#00FFFFFF"
+        android:onClick="back"
+        android:textAlignment="viewStart"
+        android:textSize="96sp"
+        app:icon="@drawable/back"
+        app:iconSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/RECORDLIST"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#BEC1E6E3"
+        android:fontFamily="@font/alatsi"
+        android:scrollbars="vertical"
+        android:shadowColor="#000000"
+        android:shadowRadius="3"
+        android:text="LOADING..."
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFC107"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/Recordforday"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="0"
+    android:backgroundTint="#000000"
+    android:backgroundTintMode="add"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/untitled_design" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="197dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/banner"
+        app:srcCompat="@drawable/oncampus" />
+
+    <ImageView
+        android:id="@+id/usericon"
+        android:layout_width="163dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/usericon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="268dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/alatsi"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3"
+        android:text="Faculty"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usericon" />
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="344dp"
+        android:gravity="center|top"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Button
+            android:id="@+id/RecordBTN"
+            android:layout_width="297dp"
+            android:layout_height="106dp"
+            android:backgroundTint="#3F51B5"
+            android:drawableTint="#00FFFFFF"
+            android:foregroundTint="#00000000"
+            android:text="Records"
+            android:textAlignment="viewEnd"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFC107"
+            android:textSize="34sp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/logwhite"
+            app:iconSize="70dp"
+            app:iconTint="@color/white"
+            app:iconTintMode="multiply"
+            app:strokeColor="#00FFFFFF" />
+
+        <Button
+            android:id="@+id/CALENDARbtn"
+            android:layout_width="297dp"
+            android:layout_height="106dp"
+            android:backgroundTint="#3F51B5"
+            android:onClick="calendar"
+            android:text="Calendar"
+            android:textAlignment="viewEnd"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFC107"
+            android:textSize="34sp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/calendarwhite"
+            app:iconSize="60dp"
+            app:strokeColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/ATTENDANCEbtn"
+            android:layout_width="297dp"
+            android:layout_height="106dp"
+            android:backgroundTint="#3F51B5"
+            android:onClick="attendance"
+            android:text="Daily attendance"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#FFC107"
+            android:textSize="34sp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/attendance"
+            app:iconSize="60dp"
+            app:iconTint="#FFFFFF"
+            app:strokeColor="#FFFFFF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="logout"
+        android:onClick="logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="#3F51B5"
+        app:layout_constraintTop_toTopOf="@+id/banner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

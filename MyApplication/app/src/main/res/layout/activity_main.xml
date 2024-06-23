@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_row="0"
+    android:backgroundTint="#000000"
+    android:backgroundTintMode="add"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/untitled_design" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="197dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/banner"
+        app:srcCompat="@drawable/oncampus" />
+
+    <ImageView
+        android:id="@+id/usericon"
+        android:layout_width="163dp"
+        android:layout_height="204dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4"
+        app:srcCompat="@drawable/usericon" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="268dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/alatsi"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="3"
+        android:text="John Gabriel"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usericon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="235dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Student number: 2022-040063"
+        android:textColor="#FFC107"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/RecordBTN"
+        android:layout_width="297dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="204dp"
+        android:backgroundTint="#3F51B5"
+        android:drawableTint="#00FFFFFF"
+        android:foregroundTint="#00000000"
+        android:text="Records"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFC107"
+        android:textSize="34sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/logwhite"
+        app:iconSize="70dp"
+        app:iconTint="#00FFFFFF"
+        app:iconTintMode="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:strokeColor="#00FFFFFF" />
+
+    <Button
+        android:id="@+id/CALENDARbtn"
+        android:layout_width="297dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="104dp"
+        android:backgroundTint="#3F51B5"
+        android:onClick="calendar"
+        android:text="Calendar"
+        android:textAlignment="viewEnd"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#FFC107"
+        android:textSize="34sp"
+        app:cornerRadius="20dp"
+        app:icon="@drawable/calendar"
+        app:iconSize="60dp"
+        app:iconTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RecordBTN"
+        app:layout_constraintVertical_bias="0.0"
+        app:strokeColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/status_circle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="@+id/banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/status" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="178dp"
+        android:layout_height="48dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.5"
+        android:text="Status:"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CALENDARbtn" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.401"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/statusgreen" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.5"
+        android:text="on campus:"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.577"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/statusred" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="20dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="1.5"
+        android:text=":off campus"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:onClick="faculty"
+        android:text="logout"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
